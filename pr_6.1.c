@@ -11,34 +11,32 @@ Given string is a Palindrome.
 ------------------------------------------------
 
 For example,
-Input:
+
+Input
 Enter any string: hello
 
 
 Output:
 Given string is not a Palindrome.
 */
-
-
-#include <stdio.h>
 #include <string.h>
  
-int main()
+ main()
 {
-    char s[1000];  
-    int i,n,c=0;
+    char str[100];  
+    int i,n,len=0;
  
     printf("Enter  the string : ");
-    gets(s);
-    n=strlen(s);
+    gets(str);
+    n=strlen(str);
  
-    for(i=0;i<n/2;i++)  
+    for(i=0;i<2;i++)  
     {
-    	if(s[i]==s[n-i-1])
-    	c++;
+    	if(str[i]==str[n-i-1])
+    	len++;
  
  	}
- 	if(c==i)
+ 	if(len==i)
  	    printf("string is palindrome");
     else
         printf("string is not palindrome");
@@ -46,4 +44,8 @@ int main()
  	 
      
 }
+
+
+
+
 
