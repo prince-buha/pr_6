@@ -18,7 +18,7 @@ Enter any string: hello
 
 Output:
 Given string is not a Palindrome.
-*/
+*/#include <string.h>
 #include <string.h>
  
  main()
@@ -26,7 +26,7 @@ Given string is not a Palindrome.
     char str[100];  
     int i,n,len=0;
  
-    printf("Enter  the string : ");
+    printf("Enter the string :- ");
     gets(str);
     n=strlen(str);
  
@@ -44,6 +44,7 @@ Given string is not a Palindrome.
  	 
      
 }
+
 
 
 
